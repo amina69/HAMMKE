@@ -34,7 +34,7 @@
 
 .navbtn button:nth-child(1){
     background-color: transparent;
-    border: 0.5px solid #662687;
+    border: 1px solid #662687;
     margin-right: 10px
 }
 
