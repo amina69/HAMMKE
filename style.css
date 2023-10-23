@@ -988,10 +988,170 @@
 
 /* CART */
 
-.cart-title{
-    font-size: 30px;
+.items{
+    padding: 10px 25px;
+    background-color: #ffffff;
+    box-shadow: rgba(149, 157, 165, 0.06) 0px 8px 24px;
+    margin: 20px 0;
+}
+
+.checkout{
+    margin: 20px 0;
+}
+
+.item-row{
+    padding: 30px 0;
+    border-bottom: 0.2px solid #e9e9e9;
+}
+
+.item-row:last-child{
+    border-bottom: none;
+}
+
+.image-div img{
+    width: 120px;
+    margin-right: 40px;
+}
+
+.close-div button{
+    outline: none;
+    border: none;
+    background-color: transparent;
+    padding: 0;
+}
+
+.close-div img{
+    width: 30px;
+}
+
+.form-select {
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.price-div div{
+    font-size: 18px;
+    font-weight: 400;
+    color: #404040;
+}
+
+.desc-div{
+    width: 200px;
+}
+
+.desc-div h6{
+    font-size: 16px;
+    font-weight: 500;
+    color: #404040;
+}
+
+.checkout-btn{
+    padding: 20px 40px;
+    font-size: 20px;
+    font-weight: 500;
+    color: #ffffff;
+    outline: none;
+    border: none;
+    background-color: #662687;
+    border-radius: 5px;
+}
+
+.total{
+    font-size: 25px;
+    font-weight: 700;
+    color: #404040;
+    margin-right: 20px;
+}
+
+.checkout-div{
+    margin: 20px 0;
+    background-color: #ffffff;
+    padding: 40px;
+}
+
+/* ORDER DIV */
+
+.total, .collect, .payment, .personal{
+    padding: 30px;
+    background-color: #ffffff;
+    box-shadow: rgba(149, 157, 165, 0.06) 0px 8px 24px;
+    margin: 5px 0;
+}
+
+.payment button{
+    padding: 15px;
+    width: 100%;
+    outline: none;
+    border: none;
+    background-color: #662687;
+    color: #ffffff;
+}
+
+.total span{
+    font-size: 16px;
+    font-weight: 500;
+    color: #404040;
+}
+
+.title{
+    font-size: 18px;
     font-weight: 600;
     color: #404040;
+    margin-bottom: 20px;
+}
+
+.form-check{
+    margin: 20px 0 30px 0;
+    padding-left: 1.5em;
+    padding-right: 1.5em;
+}
+
+.form-check:last-child{
+    margin-bottom: 0;
+}
+
+.form-check-input:checked {
+    background-color: #662687;
+    border-color: #662687;
+}
+
+.form-check label{
+    color: #404040;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.form-check form, .info-form form{
+    margin-bottom: 20px;
+}
+
+.form-check p, .personal p{
+    font-size: 12px;
+    font-weight: 300;
+    color: #707070;
+    padding-top: 10px;
+}
+
+.personal p{
+    padding-top: 0;
+}
+
+.form-check form input, .info-form form input{
+    margin: 5px 0;
+    padding: 10px;
+    outline: none;
+    border: 0.6px solid #404040;
+    background-color: transparent;
+    width: 49%;
+    border-radius: 2px;
+    font-size: 14px;
+    font-weight: 400;
+    color: #404040;
+}
+
+.form-check form input::placeholder, .info-form form input::placeholder{
+    font-size: 14px;
+    font-weight: 300;
 }
 
 
@@ -1027,6 +1187,7 @@ footer{
     width: 20px;
     color: #ffffff;
 }
+
 
 @media (max-width: 1399px) and (min-width: 1200px) {
 
@@ -1083,6 +1244,16 @@ footer{
         margin: auto 100px;
     }
 
+    /* Order Div */
+
+    .price-div div {
+        font-size: 16px;
+    }
+
+    .form-select {
+        font-size: 18px;
+    }
+
 }
 
 @media (max-width: 1199px) and (min-width: 992px) {
@@ -1136,6 +1307,37 @@ footer{
 
     .article-div, .article-top-bg {
         margin: auto 0;
+    }
+
+    /* Checkout */
+
+    .info-form form .d-flex, .form-check form .d-flex{
+        flex-wrap: wrap;
+    }
+
+    .info-form form input, .form-check form input{
+        width: 100%;
+    }
+
+    .image-div img {
+        width: 100px;
+        margin-right: 20px;
+    }
+
+    .desc-div {
+        width: 160px;
+    }
+
+    .desc-div h6{
+        font-size: 14px;
+    }
+
+    .price-div div, .title {
+        font-size: 16px;
+    }
+
+    .form-select {
+        font-size: 18px;
     }
 
 }
@@ -1327,6 +1529,37 @@ footer{
         width: 100%;
     }
 
+    /* Checkout */
+
+    .cart-div .col-md-8, .cart-div .col-md-4{
+        width: 100%;
+    }
+
+    .payment button {
+        padding: 15px 40px;
+        width: auto;
+    }
+
+    .image-div img {
+        margin-right: 20px;
+    }
+
+    .price-div div {
+        font-size: 16px;
+    }
+
+    .form-select {
+        font-size: 18px;
+    }
+
+    .desc-div h6 {
+        font-size: 14px;
+    }
+
+    .items {
+        margin: 20px 0 0 0;
+    }
+
 }
 
 @media (max-width: 767px) and (min-width: 575px) {
@@ -1514,6 +1747,42 @@ footer{
 
     .contact-div .col-md-6:nth-child(1){    
         width: 100%;
+    }
+
+    /* Checkout */
+
+    .cart-div .col-md-8, .cart-div .col-md-4{
+        width: 100%;
+    }
+
+    .payment button {
+        padding: 15px 40px;
+        width: auto;
+    }
+
+    .image-div img {
+        width: 80px;
+        margin-right: 10px;
+    }
+
+    .desc-div {
+        width: 120px;
+    }
+
+    .desc-div h6 {
+        font-size: 12px;
+    }
+
+    .price-div div {
+        font-size: 14px;
+    }
+
+    .form-select {
+        font-size: 16px;
+    }
+
+    .items {
+        margin: 20px 0 0 0;
     }
 
 }
@@ -1738,6 +2007,43 @@ footer{
         margin-top: 150px;
     }
 
+    /* Checkout */
+
+    .cart-div .col-md-8, .cart-div .col-md-4{
+        width: 100%;
+    }
+
+    .image-div img {
+        width: 60px;
+        margin-right: 10px;
+    }
+
+    .desc-div {
+        width: 120px;
+    }
+
+    .desc-div h6 {
+        font-size: 12px;
+        font-weight: 400;
+    }
+
+    .price-div div {
+        font-size: 14px;
+    }
+
+    .form-select {
+        font-size: 14px;
+    }
+
+    .items {
+        padding: 10px;
+        margin: 20px 0 0 0;
+    }
+
+    .close-div img {
+        width: 20px;
+    }
+
 }
 
 @media (max-width: 500px) {
@@ -1801,6 +2107,11 @@ footer{
     .material-card {
         width: 48%;
     }
+
+    .image-div img {
+        width: 40px;
+    }
+
 }
 
 @media (max-width: 462px) {
@@ -1813,6 +2124,10 @@ footer{
 
     .material-card {
         width: 100%;
+    }
+
+    .total {
+        font-size: 20px;
     }
 
 }
@@ -1833,6 +2148,10 @@ footer{
 
     .forum .card-text {
         font-size: 12px;
+    }
+
+    .image-div img {
+        display: none;
     }
 
 }
