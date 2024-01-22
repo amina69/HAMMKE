@@ -1,9 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous"><link rel="stylesheet" href="bootstrap-5.2.3-dist/css/bootstrap.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="bootstrap-5.2.3-dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="style.css" type="text/css">
     <title>Forum</title>
 </head>
@@ -11,8 +14,9 @@
 <body class="forum-body">
     <nav class="navbar navbar-expand-lg navbar-light">
         <div class="container">
-            <a class="navbar-brand" href="index.html"><img src="Assets/logo.jpeg" alt="logo"/>HAMKKE</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <a class="navbar-brand" href="index.html"><img src="Assets/logo.jpeg" alt="logo" />HAMKKE</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
@@ -31,10 +35,10 @@
                     </li>
                     <li class="nav-item">
                         <a class="nav-link active" aria-current="page" href="forum.html">Forum</a>
-                    </li> 
+                    </li>
                     <li class="nav-item">
                         <a class="nav-link" href="aboutUs.html">About Us</a>
-                    </li>     
+                    </li>
                 </ul>
 
                 <div class="d-flex socials justify-content-end">
@@ -49,9 +53,9 @@
                     </div>
                     <div class="icon-bg">
                         <a href="#"><img src="Assets/linkedin.png" /></a>
-                    </div>          
+                    </div>
                 </div>
-    
+
                 <div class="navbtn">
                     <button>
                         <a class="nav-link" href="store.html"><img src="Assets/store.svg" />Store</a>
@@ -69,394 +73,595 @@
     <section class="section forum-div">
         <div class="container">
             <div class="row marginX">
-                <div class="nav col-md-3 paddingR nav-pills sticky-top" id="v-pills-tab" role="tablist" aria-orientation="vertical">    
+                <div class="nav col-md-3 paddingR nav-pills sticky-top" id="v-pills-tab" role="tablist"
+                    aria-orientation="vertical">
                     <span class="sticky-top">
-                        <button class="nav-link active d-flex align-items-left align-items-center" id="v-pills-language-tab" data-bs-toggle="pill" data-bs-target="#v-pills-language" type="button" role="tab" aria-controls="v-pills-language" aria-selected="true"><img src="Assets/language.svg" />Language</button>
-                        <button class="nav-link d-flex align-items-left align-items-center" id="v-pills-culture-tab" data-bs-toggle="pill" data-bs-target="#v-pills-culture" type="button" role="tab" aria-controls="v-pills-culture" aria-selected="false"><img src="Assets/culture.svg" />Culture</button>
-                        <button class="nav-link d-flex align-items-left align-items-center" id="v-pills-history-tab" data-bs-toggle="pill" data-bs-target="#v-pills-history" type="button" role="tab" aria-controls="v-pills-history" aria-selected="false"><img src="Assets/history.svg" />History</button>
-                        <button class="nav-link d-flex align-items-left align-items-center" id="v-pills-food-tab" data-bs-toggle="pill" data-bs-target="#v-pills-food" type="button" role="tab" aria-controls="v-pills-food" aria-selected="false"><img src="Assets/food.svg" />Food</button>
-                    </span>              
+
+                        <nav class="navbar navbar-expand-lg navbar-light">
+                            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav2" aria-controls="navbarNav2" aria-expanded="false" aria-label="Toggle navigation">
+                                <img src="Assets/tabs.svg" /> <span>View Tabs</span>
+                            </button>
+    
+                            <div class="collapse navbar-collapse" id="navbarNav2">
+                                <ul class="navbar-nav">
+                                    <li class="nav-item">
+                                        <button class="nav-link active d-flex align-items-left align-items-center"
+                                        id="v-pills-language-tab" data-bs-toggle="pill" data-bs-target="#v-pills-all" type="button"
+                                        role="tab" aria-controls="v-pills-all" aria-selected="true"><img
+                                            src="Assets/All.svg" />All</button>
+                                    </li>
+                                    <li class="nav-item">
+                                        <button class="nav-link d-flex align-items-left align-items-center" id="v-pills-language-tab"
+                                        data-bs-toggle="pill" data-bs-target="#v-pills-language" type="button" role="tab"
+                                        aria-controls="v-pills-language" aria-selected="flase"><img
+                                            src="Assets/language.svg" />Language</button>
+                                    </li>
+                                    <li class="nav-item">
+                                        <button class="nav-link d-flex align-items-left align-items-center" id="v-pills-culture-tab"
+                                        data-bs-toggle="pill" data-bs-target="#v-pills-culture" type="button" role="tab"
+                                        aria-controls="v-pills-culture" aria-selected="false"><img
+                                            src="Assets/culture.svg" />Culture</button>
+                                    </li>
+                                    <li class="nav-item">
+                                        <button class="nav-link d-flex align-items-left align-items-center" id="v-pills-history-tab"
+                                        data-bs-toggle="pill" data-bs-target="#v-pills-history" type="button" role="tab"
+                                        aria-controls="v-pills-history" aria-selected="false"><img
+                                            src="Assets/history.svg" />History</button>
+                                    </li>
+                                    <li class="nav-item">
+                                        <button class="nav-link d-flex align-items-left align-items-center" id="v-pills-food-tab"
+                                        data-bs-toggle="pill" data-bs-target="#v-pills-food" type="button" role="tab"
+                                        aria-controls="v-pills-food" aria-selected="false"><img
+                                            src="Assets/food.svg" />Food</button>
+                                    </li>
+                                    <li class="nav-item">
+                                        <button class="nav-link d-flex align-items-left align-items-center" id="v-pills-myposts-tab"
+                                        data-bs-toggle="pill" data-bs-target="#v-pills-myposts" type="button" role="tab"
+                                        aria-controls="v-pills-myposts" aria-selected="false"><img
+                                        src="Assets/profile.svg" />My Posts</button>
+                                    </li>
+                                </ul>
+                            </div>
+    
+                        </nav>
+                    </span>
                 </div>
-                
+
+
                 <div class="col-md-9 paddingR tab-content" id="v-pills-tabContent">
-                  <div class="tab-pane fade show active" id="v-pills-language" role="tabpanel" aria-labelledby="v-pills-language-tab">
-                    <div class="forum">
+        
+                    <div class="post-box">
+                        <p class="card-text">Add A Post</p>
+                        <select class="form-select" aria-label="Default select example">
+                            <option selected>Select Category</option>
+                            <option value="1">Language</option>
+                            <option value="2">Culture</option>
+                            <option value="3">History</option>
+                            <option value="4">Food</option>
+                        </select> 
+                        <input type="text" placeholder="type something" />
+                        <button>Post</button>
+                    </div>
 
-                        <div class="d-flex flex-row flex-wrap forum-row justify-content-between">
-                            
-                            <!-- Post 1 -->
-                            <div class="card">           
-                                <img class="card-img-top" src="Assets/language.png" />
-                                
-                                <div class="space-div">
+                    
+                    <div class="tab-pane fade show active" id="v-pills-all" role="tabpanel"
+                        aria-labelledby="v-pills-all-tab">
+                        <div class="forum">
 
-                                    <div class="d-flex profile-div align-items-center">
-                                        <img src="Assets/profile.png" alt="profile">
-                                        <span>Hamkee & Company</span>
-                                    </div>
+                            <div class="d-flex flex-row flex-wrap forum-row justify-content-between">
 
-                                    <div class="row">
-                                        <div class="col-12"><h5 class="card-title">Korean Phrases</h5></div>                 
-                                    </div>
+                                <!-- Post 1 -->
+                                <div class="forum card"><a href="post.html">
 
-                                    <p class="card-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
-                                        <span><a href="article.html">See More</a></span>
-                                    </p>
+                                        <div class="space-div">
 
-                                    <div class="like-div">
-                                        <span>100</span><img src="Assets/likes.png" alt="...">
-                                        <span>25</span><img src="Assets/comment.png" alt="...">
-                                        <span>Posted 5 hours ago</span>
-                                    </div>
+                                            <div class="row">
+                                                <div class="col-12">
+                                                    <h5 class="card-title">Post 1</h5>
+                                                </div>
+                                            </div>
 
+                                            <p class="card-text">Lorem Ipsum is simply dummy text of the printing and
+                                                typesetting industry. Lorem Ipsum has been the industry's standard dummy
+                                                text ever since the 1500s, when an unknown printer took a galley of type
+                                                and scrambled it to make a type specimen book ...</p>
+
+                                            <div class="like-div">
+                                                <span>100</span><img src="Assets/likes.png" alt="...">
+                                                <span>25</span><img src="Assets/comment.png" alt="...">
+                                                <span>Posted 5 hours ago</span>
+                                            </div>
+
+                                        </div>
+                                    </a>
                                 </div>
-                            </div>
 
-                            <!-- Post 2 -->
-                            <div class="card">           
-                                <img class="card-img-top" src="Assets/language.png" />
-                                
-                                <div class="space-div">
+                                <!-- Post 2 -->
+                                <div class="forum card">
 
-                                    <div class="d-flex profile-div align-items-center">
-                                        <img src="Assets/profile.png" alt="profile">
-                                        <span>Hamkee & Company</span>
+                                    <div class="space-div">
+
+                                        <div class="row">
+                                            <div class="col-12">
+                                                <h5 class="card-title">Post 2</h5>
+                                            </div>
+                                        </div>
+
+                                        <p class="card-text">Lorem Ipsum is simply dummy text of the printing and
+                                            typesetting industry. Lorem Ipsum has been the industry's standard dummy
+                                            text ever since the 1500s, when an unknown printer took a galley of type and
+                                            scrambled it to make a type specimen book ...</p>
+
+                                        <div class="like-div">
+                                            <span>100</span><img src="Assets/likes.png" alt="...">
+                                            <span>25</span><img src="Assets/comment.png" alt="...">
+                                            <span>Posted 5 hours ago</span>
+                                        </div>
+
                                     </div>
-
-                                    <div class="row">
-                                        <div class="col-12"><h5 class="card-title">Korean Phrases</h5></div>                 
-                                    </div>
-
-                                    <p class="card-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
-                                        <span><a href="article.html">See More</a></span>
-                                    </p>
-
-                                    <div class="like-div">
-                                        <span>100</span><img src="Assets/likes.png" alt="...">
-                                        <span>25</span><img src="Assets/comment.png" alt="...">
-                                        <span>Posted 5 hours ago</span>
-                                    </div>
-
                                 </div>
-                            </div>
 
-                            <!-- Post 3 -->
-                            <div class="card">           
-                                <img class="card-img-top" src="Assets/language.png" />
-                                
-                                <div class="space-div">
+                                <!-- Post 3 -->
+                                <div class="forum card">
 
-                                    <div class="d-flex profile-div align-items-center">
-                                        <img src="Assets/profile.png" alt="profile">
-                                        <span>Hamkee & Company</span>
+                                    <div class="space-div">
+
+                                        <div class="row">
+                                            <div class="col-12">
+                                                <h5 class="card-title">Post 3</h5>
+                                            </div>
+                                        </div>
+
+                                        <p class="card-text">Lorem Ipsum is simply dummy text of the printing and
+                                            typesetting industry. Lorem Ipsum has been the industry's standard dummy
+                                            text ever since the 1500s, when an unknown printer took a galley of type and
+                                            scrambled it to make a type specimen book ...</p>
+
+                                        <div class="like-div">
+                                            <span>100</span><img src="Assets/likes.png" alt="...">
+                                            <span>25</span><img src="Assets/comment.png" alt="...">
+                                            <span>Posted 5 hours ago</span>
+                                        </div>
+
                                     </div>
-
-                                    <div class="row">
-                                        <div class="col-12"><h5 class="card-title">Korean Phrases</h5></div>                 
-                                    </div>
-
-                                    <p class="card-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
-                                        <span><a href="article.html">See More</a></span>
-                                    </p>
-
-                                    <div class="like-div">
-                                        <span>100</span><img src="Assets/likes.png" alt="...">
-                                        <span>25</span><img src="Assets/comment.png" alt="...">
-                                        <span>Posted 5 hours ago</span>
-                                    </div>
-
                                 </div>
+
                             </div>
 
                         </div>
-                        
                     </div>
-                  </div>
 
-                  <div class="tab-pane fade show" id="v-pills-culture" role="tabpanel" aria-labelledby="v-pills-culture-tab">
-                    <div class="forum">
+                    <div class="tab-pane fade show" id="v-pills-language" role="tabpanel"
+                        aria-labelledby="v-pills-language-tab">
+                        <div class="forum">
 
-                        <div class="d-flex flex-row flex-wrap forum-row justify-content-between">
+                            <div class="d-flex flex-row flex-wrap forum-row justify-content-between">
 
-                            <!-- Post 1 -->
-                            <div class="card">           
-                                <img class="card-img-top" src="Assets/Korean-Outfits.png" />
-                                
-                                <div class="space-div">
+                                <!-- Post 1 -->
+                                <div class="forum card">
 
-                                    <div class="d-flex profile-div align-items-center">
-                                        <img src="Assets/profile.png" alt="profile">
-                                        <span>Hamkee & Company</span>
+                                    <div class="space-div">
+
+                                        <div class="row">
+                                            <div class="col-12">
+                                                <h5 class="card-title">Post 1</h5>
+                                            </div>
+                                        </div>
+
+                                        <p class="card-text">Lorem Ipsum is simply dummy text of the printing and
+                                            typesetting industry. Lorem Ipsum has been the industry's standard dummy
+                                            text ever since the 1500s, when an unknown printer took a galley of type and
+                                            scrambled it to make a type specimen book ...</p>
+
+                                        <div class="like-div">
+                                            <span>100</span><img src="Assets/likes.png" alt="...">
+                                            <span>25</span><img src="Assets/comment.png" alt="...">
+                                            <span>Posted 5 hours ago</span>
+                                        </div>
+
                                     </div>
-
-                                    <div class="row">
-                                        <div class="col-12"><h5 class="card-title">Why Korean Fashion Style Is Unique</h5></div>                 
-                                    </div>
-
-                                    <p class="card-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
-                                        <span><a href="article.html">See More</a></span>
-                                    </p>
-
-                                    <div class="like-div">
-                                        <span>100</span><img src="Assets/likes.png" alt="...">
-                                        <span>25</span><img src="Assets/comment.png" alt="...">
-                                        <span>Posted 5 hours ago</span>
-                                    </div>
-
                                 </div>
-                            </div>
 
-                            <!-- Post 2 -->
-                            <div class="card">           
-                                <img class="card-img-top" src="Assets/Korean-Outfits.png" />
-                                
-                                <div class="space-div">
+                                <!-- Post 2 -->
+                                <div class="forum card">
 
-                                    <div class="d-flex profile-div align-items-center">
-                                        <img src="Assets/profile.png" alt="profile">
-                                        <span>Hamkee & Company</span>
+                                    <div class="space-div">
+
+                                        <div class="row">
+                                            <div class="col-12">
+                                                <h5 class="card-title">Post 2</h5>
+                                            </div>
+                                        </div>
+
+                                        <p class="card-text">Lorem Ipsum is simply dummy text of the printing and
+                                            typesetting industry. Lorem Ipsum has been the industry's standard dummy
+                                            text ever since the 1500s, when an unknown printer took a galley of type and
+                                            scrambled it to make a type specimen book ...</p>
+
+                                        <div class="like-div">
+                                            <span>100</span><img src="Assets/likes.png" alt="...">
+                                            <span>25</span><img src="Assets/comment.png" alt="...">
+                                            <span>Posted 5 hours ago</span>
+                                        </div>
+
                                     </div>
-
-                                    <div class="row">
-                                        <div class="col-12"><h5 class="card-title">Why Korean Fashion Style Is Unique</h5></div>                 
-                                    </div>
-
-                                    <p class="card-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
-                                        <span><a href="article.html">See More</a></span>
-                                    </p>
-
-                                    <div class="like-div">
-                                        <span>100</span><img src="Assets/likes.png" alt="...">
-                                        <span>25</span><img src="Assets/comment.png" alt="...">
-                                        <span>Posted 5 hours ago</span>
-                                    </div>
-
                                 </div>
-                            </div>
 
-                            <!-- Post 3 -->
-                            <div class="card">           
-                                <img class="card-img-top" src="Assets/Korean-Outfits.png" />
-                                
-                                <div class="space-div">
+                                <!-- Post 3 -->
+                                <div class="forum card">
 
-                                    <div class="d-flex profile-div align-items-center">
-                                        <img src="Assets/profile.png" alt="profile">
-                                        <span>Hamkee & Company</span>
+                                    <div class="space-div">
+
+                                        <div class="row">
+                                            <div class="col-12">
+                                                <h5 class="card-title">Post 3</h5>
+                                            </div>
+                                        </div>
+
+                                        <p class="card-text">Lorem Ipsum is simply dummy text of the printing and
+                                            typesetting industry. Lorem Ipsum has been the industry's standard dummy
+                                            text ever since the 1500s, when an unknown printer took a galley of type and
+                                            scrambled it to make a type specimen book ...</p>
+
+                                        <div class="like-div">
+                                            <span>100</span><img src="Assets/likes.png" alt="...">
+                                            <span>25</span><img src="Assets/comment.png" alt="...">
+                                            <span>Posted 5 hours ago</span>
+                                        </div>
+
                                     </div>
-
-                                    <div class="row">
-                                        <div class="col-12"><h5 class="card-title">Why Korean Fashion Style Is Unique</h5></div>                 
-                                    </div>
-
-                                    <p class="card-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
-                                        <span><a href="article.html">See More</a></span>
-                                    </p>
-
-                                    <div class="like-div">
-                                        <span>100</span><img src="Assets/likes.png" alt="...">
-                                        <span>25</span><img src="Assets/comment.png" alt="...">
-                                        <span>Posted 5 hours ago</span>
-                                    </div>
-
                                 </div>
+
                             </div>
 
                         </div>
-                        
                     </div>
-                  </div>
 
-                  <div class="tab-pane fade show" id="v-pills-history" role="tabpanel" aria-labelledby="v-pills-history-tab">
-                    <div class="forum">
+                    <div class="tab-pane fade show" id="v-pills-culture" role="tabpanel"
+                        aria-labelledby="v-pills-culture-tab">
+                        <div class="forum">
 
-                        <div class="d-flex flex-row flex-wrap forum-row justify-content-between">
+                            <div class="d-flex flex-row flex-wrap forum-row justify-content-between">
 
-                            <!-- Post 1 -->
-                            <div class="card">           
-                                <img  class="card-img-top" src="Assets/history.png" />
-                                
-                                <div class="space-div">
+                                <!-- Post 1 -->
+                                <div class="forum card">
 
-                                    <div class="d-flex profile-div align-items-center">
-                                        <img src="Assets/profile.png" alt="profile">
-                                        <span>Hamkee & Company</span>
+                                    <div class="space-div">
+
+                                        <div class="row">
+                                            <div class="col-12">
+                                                <h5 class="card-title">Post 1</h5>
+                                            </div>
+                                        </div>
+
+                                        <p class="card-text">Lorem Ipsum is simply dummy text of the printing and
+                                            typesetting industry. Lorem Ipsum has been the industry's standard dummy
+                                            text ever since the 1500s, when an unknown printer took a galley of type and
+                                            scrambled it to make a type specimen book ...</p>
+
+                                        <div class="like-div">
+                                            <span>100</span><img src="Assets/likes.png" alt="...">
+                                            <span>25</span><img src="Assets/comment.png" alt="...">
+                                            <span>Posted 5 hours ago</span>
+                                        </div>
+
                                     </div>
-
-                                    <div class="row">
-                                        <div class="col-12"><h5 class="card-title">Korean Cultural Festival</h5></div>                 
-                                    </div>
-
-                                    <p class="card-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
-                                        <span><a href="article.html">See More</a></span>
-                                    </p>
-
-                                    <div class="like-div">
-                                        <span>100</span><img src="Assets/likes.png" alt="...">
-                                        <span>25</span><img src="Assets/comment.png" alt="...">
-                                        <span>Posted 5 hours ago</span>
-                                    </div>
-
                                 </div>
-                            </div>
 
-                            <!-- Post 2 -->
-                            <div class="card">           
-                                <img  class="card-img-top" src="Assets/history.png" />
-                                
-                                <div class="space-div">
+                                <!-- Post 2 -->
+                                <div class="forum card">
 
-                                    <div class="d-flex profile-div align-items-center">
-                                        <img src="Assets/profile.png" alt="profile">
-                                        <span>Hamkee & Company</span>
+                                    <div class="space-div">
+
+                                        <div class="row">
+                                            <div class="col-12">
+                                                <h5 class="card-title">Post 2</h5>
+                                            </div>
+                                        </div>
+
+                                        <p class="card-text">Lorem Ipsum is simply dummy text of the printing and
+                                            typesetting industry. Lorem Ipsum has been the industry's standard dummy
+                                            text ever since the 1500s, when an unknown printer took a galley of type and
+                                            scrambled it to make a type specimen book ...</p>
+
+                                        <div class="like-div">
+                                            <span>100</span><img src="Assets/likes.png" alt="...">
+                                            <span>25</span><img src="Assets/comment.png" alt="...">
+                                            <span>Posted 5 hours ago</span>
+                                        </div>
+
                                     </div>
-
-                                    <div class="row">
-                                        <div class="col-12"><h5 class="card-title">Korean Cultural Festival</h5></div>                 
-                                    </div>
-
-                                    <p class="card-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
-                                        <span><a href="article.html">See More</a></span>
-                                    </p>
-
-                                    <div class="like-div">
-                                        <span>100</span><img src="Assets/likes.png" alt="...">
-                                        <span>25</span><img src="Assets/comment.png" alt="...">
-                                        <span>Posted 5 hours ago</span>
-                                    </div>
-
                                 </div>
-                            </div>
 
-                            <!-- Post 3 -->
-                            <div class="card">           
-                                <img  class="card-img-top" src="Assets/history.png" />
-                                
-                                <div class="space-div">
+                                <!-- Post 3 -->
+                                <div class="forum card">
 
-                                    <div class="d-flex profile-div align-items-center">
-                                        <img src="Assets/profile.png" alt="profile">
-                                        <span>Hamkee & Company</span>
+                                    <div class="space-div">
+
+                                        <div class="row">
+                                            <div class="col-12">
+                                                <h5 class="card-title">Post 3</h5>
+                                            </div>
+                                        </div>
+
+                                        <p class="card-text">Lorem Ipsum is simply dummy text of the printing and
+                                            typesetting industry. Lorem Ipsum has been the industry's standard dummy
+                                            text ever since the 1500s, when an unknown printer took a galley of type and
+                                            scrambled it to make a type specimen book ...</p>
+
+                                        <div class="like-div">
+                                            <span>100</span><img src="Assets/likes.png" alt="...">
+                                            <span>25</span><img src="Assets/comment.png" alt="...">
+                                            <span>Posted 5 hours ago</span>
+                                        </div>
+
                                     </div>
-
-                                    <div class="row">
-                                        <div class="col-12"><h5 class="card-title">Korean Cultural Festival</h5></div>                 
-                                    </div>
-
-                                    <p class="card-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
-                                        <span><a href="article.html">See More</a></span>
-                                    </p>
-
-                                    <div class="like-div">
-                                        <span>100</span><img src="Assets/likes.png" alt="...">
-                                        <span>25</span><img src="Assets/comment.png" alt="...">
-                                        <span>Posted 5 hours ago</span>
-                                    </div>
-
                                 </div>
+
                             </div>
 
                         </div>
-                        
                     </div>
-                  </div>
 
-                  <div class="tab-pane fade show" id="v-pills-food" role="tabpanel" aria-labelledby="v-pills-food-tab">
-                    <div class="forum">
+                    <div class="tab-pane fade show" id="v-pills-history" role="tabpanel"
+                        aria-labelledby="v-pills-history-tab">
+                        <div class="forum">
 
-                        <div class="d-flex flex-row flex-wrap forum-row justify-content-between">
+                            <div class="d-flex flex-row flex-wrap forum-row justify-content-between">
 
-                            <!-- Post 1 -->
-                            <div class="card">           
-                                <img  class="card-img-top" src="Assets/korean-dishes.png" />
-                                
-                                <div class="space-div">
+                                <!-- Post 1 -->
+                                <div class="forum card">
 
-                                    <div class="d-flex profile-div align-items-center">
-                                        <img src="Assets/profile.png" alt="profile">
-                                        <span>Hamkee & Company</span>
+                                    <div class="space-div">
+
+                                        <div class="row">
+                                            <div class="col-12">
+                                                <h5 class="card-title">Post 1</h5>
+                                            </div>
+                                        </div>
+
+                                        <p class="card-text">Lorem Ipsum is simply dummy text of the printing and
+                                            typesetting industry. Lorem Ipsum has been the industry's standard dummy
+                                            text ever since the 1500s, when an unknown printer took a galley of type and
+                                            scrambled it to make a type specimen book ...</p>
+
+                                        <div class="like-div">
+                                            <span>100</span><img src="Assets/likes.png" alt="...">
+                                            <span>25</span><img src="Assets/comment.png" alt="...">
+                                            <span>Posted 5 hours ago</span>
+                                        </div>
+
                                     </div>
-
-                                    <div class="row">
-                                        <div class="col-12"><h5 class="card-title">Lets Us Talk About Korean Dishes</h5></div>                 
-                                    </div>
-
-                                    <p class="card-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
-                                        <span><a href="article.html">See More</a></span>
-                                    </p>
-
-                                    <div class="like-div">
-                                        <span>100</span><img src="Assets/likes.png" alt="...">
-                                        <span>25</span><img src="Assets/comment.png" alt="...">
-                                        <span>Posted 5 hours ago</span>
-                                    </div>
-
                                 </div>
+
+                                <!-- Post 2 -->
+                                <div class="forum card">
+
+                                    <div class="space-div">
+
+                                        <div class="row">
+                                            <div class="col-12">
+                                                <h5 class="card-title">Post 2</h5>
+                                            </div>
+                                        </div>
+
+                                        <p class="card-text">Lorem Ipsum is simply dummy text of the printing and
+                                            typesetting industry. Lorem Ipsum has been the industry's standard dummy
+                                            text ever since the 1500s, when an unknown printer took a galley of type and
+                                            scrambled it to make a type specimen book ...</p>
+
+                                        <div class="like-div">
+                                            <span>100</span><img src="Assets/likes.png" alt="...">
+                                            <span>25</span><img src="Assets/comment.png" alt="...">
+                                            <span>Posted 5 hours ago</span>
+                                        </div>
+
+                                    </div>
+                                </div>
+
+                                <!-- Post 3 -->
+                                <div class="forum card">
+
+                                    <div class="space-div">
+
+                                        <div class="row">
+                                            <div class="col-12">
+                                                <h5 class="card-title">Post 3</h5>
+                                            </div>
+                                        </div>
+
+                                        <p class="card-text">Lorem Ipsum is simply dummy text of the printing and
+                                            typesetting industry. Lorem Ipsum has been the industry's standard dummy
+                                            text ever since the 1500s, when an unknown printer took a galley of type and
+                                            scrambled it to make a type specimen book ...</p>
+
+                                        <div class="like-div">
+                                            <span>100</span><img src="Assets/likes.png" alt="...">
+                                            <span>25</span><img src="Assets/comment.png" alt="...">
+                                            <span>Posted 5 hours ago</span>
+                                        </div>
+
+                                    </div>
+                                </div>
+
                             </div>
 
-                            <!-- Post 2 -->
-                            <div class="card">           
-                                <img  class="card-img-top" src="Assets/korean-dishes.png" />
-                                
-                                <div class="space-div">
+                        </div>
+                    </div>
 
-                                    <div class="d-flex profile-div align-items-center">
-                                        <img src="Assets/profile.png" alt="profile">
-                                        <span>Hamkee & Company</span>
+                    <div class="tab-pane fade show" id="v-pills-food" role="tabpanel"
+                        aria-labelledby="v-pills-food-tab">
+                        <div class="forum">
+
+                            <div class="d-flex flex-row flex-wrap forum-row justify-content-between">
+
+                                <!-- Post 1 -->
+                                <div class="forum card">
+
+                                    <div class="space-div">
+
+                                        <div class="row">
+                                            <div class="col-12">
+                                                <h5 class="card-title">Post 1</h5>
+                                            </div>
+                                        </div>
+
+                                        <p class="card-text">Lorem Ipsum is simply dummy text of the printing and
+                                            typesetting industry. Lorem Ipsum has been the industry's standard dummy
+                                            text ever since the 1500s, when an unknown printer took a galley of type and
+                                            scrambled it to make a type specimen book ...</p>
+
+                                        <div class="like-div">
+                                            <span>100</span><img src="Assets/likes.png" alt="...">
+                                            <span>25</span><img src="Assets/comment.png" alt="...">
+                                            <span>Posted 5 hours ago</span>
+                                        </div>
+
                                     </div>
-
-                                    <div class="row">
-                                        <div class="col-12"><h5 class="card-title">Lets Us Talk About Korean Dishes</h5></div>                 
-                                    </div>
-
-                                    <p class="card-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
-                                        <span><a href="article.html">See More</a></span>
-                                    </p>
-
-                                    <div class="like-div">
-                                        <span>100</span><img src="Assets/likes.png" alt="...">
-                                        <span>25</span><img src="Assets/comment.png" alt="...">
-                                        <span>Posted 5 hours ago</span>
-                                    </div>
-
                                 </div>
-                            </div>
 
-                            <!-- Post 3 -->
-                            <div class="card">           
-                                <img  class="card-img-top" src="Assets/korean-dishes.png" />
-                                
-                                <div class="space-div">
+                                <!-- Post 2 -->
+                                <div class="forum card">
 
-                                    <div class="d-flex profile-div align-items-center">
-                                        <img src="Assets/profile.png" alt="profile">
-                                        <span>Hamkee & Company</span>
+                                    <div class="space-div">
+
+                                        <div class="row">
+                                            <div class="col-12">
+                                                <h5 class="card-title">Post 2</h5>
+                                            </div>
+                                        </div>
+
+                                        <p class="card-text">Lorem Ipsum is simply dummy text of the printing and
+                                            typesetting industry. Lorem Ipsum has been the industry's standard dummy
+                                            text ever since the 1500s, when an unknown printer took a galley of type and
+                                            scrambled it to make a type specimen book ...</p>
+
+                                        <div class="like-div">
+                                            <span>100</span><img src="Assets/likes.png" alt="...">
+                                            <span>25</span><img src="Assets/comment.png" alt="...">
+                                            <span>Posted 5 hours ago</span>
+                                        </div>
+
                                     </div>
-
-                                    <div class="row">
-                                        <div class="col-12"><h5 class="card-title">Lets Us Talk About Korean Dishes</h5></div>                 
-                                    </div>
-
-                                    <p class="card-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
-                                        <span><a href="article.html">See More</a></span>
-                                    </p>
-
-                                    <div class="like-div">
-                                        <span>100</span><img src="Assets/likes.png" alt="...">
-                                        <span>25</span><img src="Assets/comment.png" alt="...">
-                                        <span>Posted 5 hours ago</span>
-                                    </div>
-
                                 </div>
+
+                                <!-- Post 3 -->
+                                <div class="forum card">
+
+                                    <div class="space-div">
+
+                                        <div class="row">
+                                            <div class="col-12">
+                                                <h5 class="card-title">Post 3</h5>
+                                            </div>
+                                        </div>
+
+                                        <p class="card-text">Lorem Ipsum is simply dummy text of the printing and
+                                            typesetting industry. Lorem Ipsum has been the industry's standard dummy
+                                            text ever since the 1500s, when an unknown printer took a galley of type and
+                                            scrambled it to make a type specimen book ...</p>
+
+                                        <div class="like-div">
+                                            <span>100</span><img src="Assets/likes.png" alt="...">
+                                            <span>25</span><img src="Assets/comment.png" alt="...">
+                                            <span>Posted 5 hours ago</span>
+                                        </div>
+
+                                    </div>
+                                </div>
+
                             </div>
 
                         </div>
 
                     </div>
 
-                  </div>
+                    <div class="tab-pane fade show" id="v-pills-myposts" role="tabpanel"
+                        aria-labelledby="v-pills-myposts-tab">
+                        <div class="forum">
+
+                            <div class="d-flex flex-row flex-wrap forum-row justify-content-between">
+
+                                <!-- Post 1 -->
+                                <div class="forum card">
+
+                                    <div class="space-div">
+
+                                        <div class="row">
+                                            <div class="col-12">
+                                                <h5 class="card-title">Post 1</h5>
+                                            </div>
+                                        </div>
+
+                                        <p class="card-text">Lorem Ipsum is simply dummy text of the printing and
+                                            typesetting industry. Lorem Ipsum has been the industry's standard dummy
+                                            text ever since the 1500s, when an unknown printer took a galley of type and
+                                            scrambled it to make a type specimen book ...</p>
+
+                                        <div class="like-div">
+                                            <span>100</span><img src="Assets/likes.png" alt="...">
+                                            <span>25</span><img src="Assets/comment.png" alt="...">
+                                            <span>Posted 5 hours ago</span>
+                                        </div>
+
+                                    </div>
+                                </div>
+
+                                <!-- Post 2 -->
+                                <div class="forum card">
+
+                                    <div class="space-div">
+
+                                        <div class="row">
+                                            <div class="col-12">
+                                                <h5 class="card-title">Post 2</h5>
+                                            </div>
+                                        </div>
+
+                                        <p class="card-text">Lorem Ipsum is simply dummy text of the printing and
+                                            typesetting industry. Lorem Ipsum has been the industry's standard dummy
+                                            text ever since the 1500s, when an unknown printer took a galley of type and
+                                            scrambled it to make a type specimen book ...</p>
+
+                                        <div class="like-div">
+                                            <span>100</span><img src="Assets/likes.png" alt="...">
+                                            <span>25</span><img src="Assets/comment.png" alt="...">
+                                            <span>Posted 5 hours ago</span>
+                                        </div>
+
+                                    </div>
+                                </div>
+
+                                <!-- Post 3 -->
+                                <div class="forum card">
+
+                                    <div class="space-div">
+
+                                        <div class="row">
+                                            <div class="col-12">
+                                                <h5 class="card-title">Post 3</h5>
+                                            </div>
+                                        </div>
+
+                                        <p class="card-text">Lorem Ipsum is simply dummy text of the printing and
+                                            typesetting industry. Lorem Ipsum has been the industry's standard dummy
+                                            text ever since the 1500s, when an unknown printer took a galley of type and
+                                            scrambled it to make a type specimen book ...</p>
+
+                                        <div class="like-div">
+                                            <span>100</span><img src="Assets/likes.png" alt="...">
+                                            <span>25</span><img src="Assets/comment.png" alt="...">
+                                            <span>Posted 5 hours ago</span>
+                                        </div>
+
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
                 </div>
-              </div>
+            </div>
         </div>
     </section>
 
@@ -477,12 +682,16 @@
             </div>
             <div class="icon-bg">
                 <a href="#"><img src="Assets/linkedin.png" /></a>
-            </div>        
+            </div>
         </div>
 
-        <div class="copyright-div text-center">Copyright <img src="Assets/copyright_FILL0_wght400_GRAD0_opsz48 1.png" />2023 Hamkke</div>
+        <div class="copyright-div text-center">Copyright <img
+                src="Assets/copyright_FILL0_wght400_GRAD0_opsz48 1.png" />2023 Hamkke</div>
     </footer>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+        crossorigin="anonymous"></script>
 </body>
+
 </html>
