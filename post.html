@@ -14,19 +14,17 @@
 <body class="article-body">
     <nav class="navbar navbar-expand-lg navbar-light">
         <div class="container">
-            <a class="navbar-brand" href="index.html"><img src="Assets/logo.jpeg" alt="logo" />HAMKKE</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <a class="navbar-brand" href="index.html"><img src="Assets/logo.jpeg" alt="logo"/>HAMKKE</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav">
                     <li class="nav-item">
                         <a class="nav-link" href="index.html">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="learn korean.html">Learn Korean</a>
+                        <a class="nav-link" href="learn korean.html">Learn</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="hallyu.html">Hallyu</a>
@@ -36,10 +34,16 @@
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="forum.html">Forum</a>
+                    </li> 
+                    <li class="nav-item">
+                        <a class="nav-link" href="aboutUs.html">About</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="aboutUs.html">About Us</a>
+                        <a class="nav-link" href="store.html">Store</a>
                     </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="cart.html">Cart</a>
+                    </li>  
                 </ul>
 
                 <div class="d-flex socials justify-content-end">
@@ -54,16 +58,12 @@
                     </div>
                     <div class="icon-bg">
                         <a href="#"><img src="Assets/linkedin.png" /></a>
-                    </div>
+                    </div>       
                 </div>
-
+    
                 <div class="navbtn">
                     <button>
-                        <a class="nav-link" href="store.html"><img src="Assets/store.svg" />Store</a>
-                    </button>
-
-                    <button>
-                        <a class="nav-link" href="cart.html"><img src="Assets/cart.svg" />Cart</a>
+                        <a class="nav-link" href="login.html">Login</a>
                     </button>
                 </div>
             </div>
@@ -79,34 +79,49 @@
                     aria-orientation="vertical">
                     <div class="sticky-top">
 
-                        <nav class="navbar navbar-expand-lg navbar-light">
-                            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                                data-bs-target="#navbarNav2" aria-controls="navbarNav2" aria-expanded="false"
-                                aria-label="Toggle navigation">
-                                <img src="Assets/tabs.svg" /> <span>View Tabs</span>
-                            </button>
+                        <button class="post-btn" type="button" data-bs-toggle="modal" data-bs-target="#post">Start Discussion</button>
 
-                            <div class="collapse navbar-collapse" id="navbarNav2">
-                                <ul class="navbar-nav">
-                                    <li class="nav-item">
-                                        <button class="nav-link active d-flex align-items-left align-items-center"
-                                            id="v-pills-post-tab" data-bs-toggle="pill" data-bs-target="#v-pills-post"
-                                            type="button" role="tab" aria-controls="v-pills-post"
-                                            aria-selected="false"><img src="Assets/viewed-post.svg" />Opened
-                                            Post</button>
-                                    </li>
-                                    <li class="nav-item">
-                                        <button class="nav-link d-flex align-items-left align-items-center"
-                                            id="v-pills-myposts-tab" data-bs-toggle="pill"
-                                            data-bs-target="#v-pills-myposts" type="button" role="tab"
-                                            aria-controls="v-pills-myposts" aria-selected="false"><img
-                                                src="Assets/profile.svg" />My Posts</button>
-                                    </li>
-                                </ul>
+                    </div>
+                </div>
+
+                <!-- Post Modal -->
+                <div class="modal fade" id="post" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <p class="card-text">Start A Discussion</p>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                             </div>
+                            <div class="modal-body">
+                                <div class="post-box">
+                                    <select class="form-select" aria-label="Default select example">
+                                        <option selected>Select Category</option>
+                                        <option value="1">Language</option>
+                                        <option value="2">Culture</option>
+                                        <option value="3">History</option>
+                                        <option value="4">Food</option>
+                                    </select> 
+                                    <textarea type="text" placeholder="type something"></textarea>
+                                
+                                    <button data-bs-toggle="modal" data-bs-target="#postsuccessModal">Post</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
-                        </nav>
-
+                <!-- Post Success Modal -->
+                <div class="modal fade" id="postsuccessModal" tabindex="-1" aria-labelledby="postsuccessModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body text-center">
+                            <img src="Assets/check_circle.svg" />
+                            <h6>You have Successfully Started A Conversation</h6>
+                        </div>
+                        </div>
                     </div>
                 </div>
 
@@ -116,173 +131,74 @@
                         <button><img src="Assets/arrow_back.svg" /><a href="forum.html">Back To Forum</a></button>
                     </div>
 
-                    <div class="tab-pane fade show active" id="v-pills-post" role="tabpanel"
-                        aria-labelledby="v-pills-post-tab">
+                    <div class="article-div">
 
-                        <div class="article-div">
-
-                            <div class="row">
-                                <div class="col-12">
-                                    <h5 class="card-title">Post 1</h5>
-                                </div>
-                            </div>
-
-                            <p class="card-text">Lorem Ipsum is simply dummy text of the printing and typesetting
-                                industry.
-                                Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an
-                                unknown printer took a galley of type and scrambled it to make a type specimen book.
-                                Lorem
-                                Ipsum is simply dummy text of the printing and typesetting industry.
-                                Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an
-                                unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
-
-                            <div class="like-div">
-                                <span>100<img src="Assets/likes.png" alt="..." /><span class="text">Likes</span></span>
-                            </div>
-
-
-                            <div class="row">
-                                <div class="col-12 dropdown">
-
-                                    <span class="dropdown-button">50<img src="Assets/comment.png" alt="..." /><span
-                                            class="text">Comments / <span class="comment-link">Leave A
-                                                Comment</span></span></span>
-
-                                    <div class="dropdown-content">
-                                        <div class="comment">
-                                            <div class="searchbox">
-                                                <p class="card-text">Add Your comment</p>
-                                                <input type="search" placeholder="type something" />
-                                            </div>
-
-                                            <div class="title">Comments</div>
-                                            <div class="comment-section">
-                                                <span>@user123</span>
-                                                <p class="card-text">Lorem Ipsum is simply dummy text of the printing
-                                                    and
-                                                    typesetting industry. Lorem Ipsum has been the industry's standard
-                                                    dummy
-                                                    text ever since the 1500s, when an unknown printer took a galley of
-                                                    type
-                                                    and scrambled it to make a type specimen book.</p>
-                                            </div>
-
-                                            <div class="comment-section top-line">
-                                                <span>@userABC</span>
-                                                <p class="card-text">Lorem Ipsum is simply dummy text of the printing
-                                                    and
-                                                    typesetting industry. Lorem Ipsum has been the industry's standard
-                                                    dummy
-                                                    text ever since the 1500s, when an unknown printer took a galley of
-                                                    type
-                                                    and scrambled it to make a type specimen book.</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
+                        <div class="d-flex profile-div align-items-center">
+                            <img src="Assets/profile.png" alt="profile">
+                            <span>Hamkee & Company</span>
                         </div>
-                    </div>
 
-                    <div class="tab-pane fade show" id="v-pills-myposts" role="tabpanel"
-                        aria-labelledby="v-pills-myposts-tab">
-                        <div class="forum">
-
-                            <div class="post-box">
-                                <p class="card-text">Add A Post</p>
-                                <select class="form-select" aria-label="Default select example">
-                                    <option selected>Select Category</option>
-                                    <option value="1">Language</option>
-                                    <option value="2">Culture</option>
-                                    <option value="3">History</option>
-                                    <option value="4">Food</option>
-                                </select>
-                                <input type="text" placeholder="type something" />
-                                <button>Post</button>
+                        <div class="row">
+                            <div class="col-12">
+                                <h5 class="card-title">Post 1</h5>
                             </div>
+                        </div>
 
-                            <div class="d-flex flex-row flex-wrap forum-row justify-content-between">
+                        <p class="card-text">Lorem Ipsum is simply dummy text of the printing and typesetting
+                            industry.
+                            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an
+                            unknown printer took a galley of type and scrambled it to make a type specimen book.
+                            Lorem
+                            Ipsum is simply dummy text of the printing and typesetting industry.
+                            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an
+                            unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
 
-                                <!-- Post 1 -->
-                                <div class="forum card"><a href="post.html">
+                        <div class="like-div">
+                            <span>100<img src="Assets/likes.png" alt="..." /><span class="text">Likes</span></span>
+                        </div>
 
-                                        <div class="space-div">
 
-                                            <div class="row">
-                                                <div class="col-12">
-                                                    <h5 class="card-title">Post 1</h5>
-                                                </div>
-                                            </div>
+                        <div class="row">
+                            <div class="col-12 dropdown">
 
-                                            <p class="card-text">Lorem Ipsum is simply dummy text of the printing and
-                                                typesetting industry. Lorem Ipsum has been the industry's standard dummy
-                                                text ever since the 1500s, when an unknown printer took a galley of type
+                                <span class="dropdown-button">50<img src="Assets/comment.png" alt="..." /><span
+                                        class="text">Comments / <span class="comment-link">Leave A
+                                            Comment</span></span></span>
+
+                                <div class="dropdown-content">
+                                    <div class="comment">
+                                        <div class="searchbox">
+                                            <p class="card-text">Add Your comment</p>
+                                            <input type="search" placeholder="type something" />
+                                        </div>
+
+                                        <div class="title">Comments</div>
+                                        <div class="comment-section">
+                                            <span>@user123</span>
+                                            <p class="card-text">Lorem Ipsum is simply dummy text of the printing
                                                 and
-                                                scrambled it to make a type specimen book ...</p>
-
-                                            <div class="like-div">
-                                                <span>100</span><img src="Assets/likes.png" alt="...">
-                                                <span>25</span><img src="Assets/comment.png" alt="...">
-                                                <span>Posted 5 hours ago</span>
-                                            </div>
-
-                                        </div>
-                                </div></a>
-
-                                <!-- Post 2 -->
-                                <div class="forum card">
-
-                                    <div class="space-div">
-
-                                        <div class="row">
-                                            <div class="col-12">
-                                                <h5 class="card-title">Post 2</h5>
-                                            </div>
+                                                typesetting industry. Lorem Ipsum has been the industry's standard
+                                                dummy
+                                                text ever since the 1500s, when an unknown printer took a galley of
+                                                type
+                                                and scrambled it to make a type specimen book.</p>
                                         </div>
 
-                                        <p class="card-text">Lorem Ipsum is simply dummy text of the printing and
-                                            typesetting industry. Lorem Ipsum has been the industry's standard dummy
-                                            text ever since the 1500s, when an unknown printer took a galley of type and
-                                            scrambled it to make a type specimen book ...</p>
-
-                                        <div class="like-div">
-                                            <span>100</span><img src="Assets/likes.png" alt="...">
-                                            <span>25</span><img src="Assets/comment.png" alt="...">
-                                            <span>Posted 5 hours ago</span>
+                                        <div class="comment-section top-line">
+                                            <span>@userABC</span>
+                                            <p class="card-text">Lorem Ipsum is simply dummy text of the printing
+                                                and
+                                                typesetting industry. Lorem Ipsum has been the industry's standard
+                                                dummy
+                                                text ever since the 1500s, when an unknown printer took a galley of
+                                                type
+                                                and scrambled it to make a type specimen book.</p>
                                         </div>
-
                                     </div>
                                 </div>
-
-                                <!-- Post 3 -->
-                                <div class="forum card">
-
-                                    <div class="space-div">
-
-                                        <div class="row">
-                                            <div class="col-12">
-                                                <h5 class="card-title">Post 3</h5>
-                                            </div>
-                                        </div>
-
-                                        <p class="card-text">Lorem Ipsum is simply dummy text of the printing and
-                                            typesetting industry. Lorem Ipsum has been the industry's standard dummy
-                                            text ever since the 1500s, when an unknown printer took a galley of type and
-                                            scrambled it to make a type specimen book ...</p>
-
-                                        <div class="like-div">
-                                            <span>100</span><img src="Assets/likes.png" alt="...">
-                                            <span>25</span><img src="Assets/comment.png" alt="...">
-                                            <span>Posted 5 hours ago</span>
-                                        </div>
-
-                                    </div>
-                                </div>
-
                             </div>
-
                         </div>
+
                     </div>
 
                 </div>

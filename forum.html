@@ -14,9 +14,8 @@
 <body class="forum-body">
     <nav class="navbar navbar-expand-lg navbar-light">
         <div class="container">
-            <a class="navbar-brand" href="index.html"><img src="Assets/logo.jpeg" alt="logo" />HAMKKE</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <a class="navbar-brand" href="index.html"><img src="Assets/logo.jpeg" alt="logo"/>HAMKKE</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
@@ -25,7 +24,7 @@
                         <a class="nav-link" href="index.html">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="learn korean.html">Learn Korean</a>
+                        <a class="nav-link" href="learn korean.html">Learn</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="hallyu.html">Hallyu</a>
@@ -35,10 +34,16 @@
                     </li>
                     <li class="nav-item">
                         <a class="nav-link active" aria-current="page" href="forum.html">Forum</a>
+                    </li> 
+                    <li class="nav-item">
+                        <a class="nav-link" href="aboutUs.html">About</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="aboutUs.html">About Us</a>
+                        <a class="nav-link" href="store.html">Store</a>
                     </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="cart.html">Cart</a>
+                    </li>  
                 </ul>
 
                 <div class="d-flex socials justify-content-end">
@@ -53,20 +58,16 @@
                     </div>
                     <div class="icon-bg">
                         <a href="#"><img src="Assets/linkedin.png" /></a>
-                    </div>
+                    </div>       
                 </div>
-
+    
                 <div class="navbtn">
                     <button>
-                        <a class="nav-link" href="store.html"><img src="Assets/store.svg" />Store</a>
-                    </button>
-
-                    <button>
-                        <a class="nav-link" href="cart.html"><img src="Assets/cart.svg" />Cart</a>
+                        <a class="nav-link" href="login.html">Login</a>
                     </button>
                 </div>
-
             </div>
+
         </div>
     </nav>
 
@@ -76,7 +77,8 @@
                 <div class="nav col-md-3 paddingR nav-pills sticky-top" id="v-pills-tab" role="tablist"
                     aria-orientation="vertical">
                     <span class="sticky-top">
-
+                        <button class="post-btn" type="button" data-bs-toggle="modal" data-bs-target="#post">Start Discussion</button>
+                    
                         <nav class="navbar navbar-expand-lg navbar-light">
                             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav2" aria-controls="navbarNav2" aria-expanded="false" aria-label="Toggle navigation">
                                 <img src="Assets/tabs.svg" /> <span>View Tabs</span>
@@ -87,61 +89,82 @@
                                     <li class="nav-item">
                                         <button class="nav-link active d-flex align-items-left align-items-center"
                                         id="v-pills-language-tab" data-bs-toggle="pill" data-bs-target="#v-pills-all" type="button"
-                                        role="tab" aria-controls="v-pills-all" aria-selected="true"><img
-                                            src="Assets/All.svg" />All</button>
+                                        role="tab" aria-controls="v-pills-all" aria-selected="true">All</button>
                                     </li>
                                     <li class="nav-item">
                                         <button class="nav-link d-flex align-items-left align-items-center" id="v-pills-language-tab"
                                         data-bs-toggle="pill" data-bs-target="#v-pills-language" type="button" role="tab"
-                                        aria-controls="v-pills-language" aria-selected="flase"><img
-                                            src="Assets/language.svg" />Language</button>
+                                        aria-controls="v-pills-language" aria-selected="flase">Language</button>
                                     </li>
                                     <li class="nav-item">
                                         <button class="nav-link d-flex align-items-left align-items-center" id="v-pills-culture-tab"
                                         data-bs-toggle="pill" data-bs-target="#v-pills-culture" type="button" role="tab"
-                                        aria-controls="v-pills-culture" aria-selected="false"><img
-                                            src="Assets/culture.svg" />Culture</button>
+                                        aria-controls="v-pills-culture" aria-selected="false">Culture</button>
                                     </li>
                                     <li class="nav-item">
                                         <button class="nav-link d-flex align-items-left align-items-center" id="v-pills-history-tab"
                                         data-bs-toggle="pill" data-bs-target="#v-pills-history" type="button" role="tab"
-                                        aria-controls="v-pills-history" aria-selected="false"><img
-                                            src="Assets/history.svg" />History</button>
+                                        aria-controls="v-pills-history" aria-selected="false">History</button>
                                     </li>
                                     <li class="nav-item">
                                         <button class="nav-link d-flex align-items-left align-items-center" id="v-pills-food-tab"
                                         data-bs-toggle="pill" data-bs-target="#v-pills-food" type="button" role="tab"
-                                        aria-controls="v-pills-food" aria-selected="false"><img
-                                            src="Assets/food.svg" />Food</button>
+                                        aria-controls="v-pills-food" aria-selected="false">Food</button>
                                     </li>
                                     <li class="nav-item">
                                         <button class="nav-link d-flex align-items-left align-items-center" id="v-pills-myposts-tab"
                                         data-bs-toggle="pill" data-bs-target="#v-pills-myposts" type="button" role="tab"
-                                        aria-controls="v-pills-myposts" aria-selected="false"><img
-                                        src="Assets/profile.svg" />My Posts</button>
+                                        aria-controls="v-pills-myposts" aria-selected="false">My Posts</button>
                                     </li>
                                 </ul>
                             </div>
-    
                         </nav>
                     </span>
                 </div>
 
-                <div class="col-md-9 paddingR tab-content" id="v-pills-tabContent">
-        
-                    <div class="post-box">
-                        <p class="card-text">Add A Post</p>
-                        <select class="form-select" aria-label="Default select example">
-                            <option selected>Select Category</option>
-                            <option value="1">Language</option>
-                            <option value="2">Culture</option>
-                            <option value="3">History</option>
-                            <option value="4">Food</option>
-                        </select> 
-                        <input type="text" placeholder="type something" />
-                        <button>Post</button>
+                <!-- Post Modal -->
+                <div class="modal fade" id="post" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <p class="card-text">Start A Discussion</p>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <div class="post-box">
+                                    <select class="form-select" aria-label="Default select example">
+                                        <option selected>Select Category</option>
+                                        <option value="1">Language</option>
+                                        <option value="2">Culture</option>
+                                        <option value="3">History</option>
+                                        <option value="4">Food</option>
+                                    </select> 
+                                    <textarea type="text" placeholder="type something"></textarea>
+                                
+                                    <button data-bs-toggle="modal" data-bs-target="#postsuccessModal">Post</button>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    
+                </div>
+
+                <!-- Post Success Modal -->
+                <div class="modal fade" id="postsuccessModal" tabindex="-1" aria-labelledby="postsuccessModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body text-center">
+                            <img src="Assets/check_circle.svg" />
+                            <h6>You have Successfully Started A Conversation</h6>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-9 paddingR tab-content" id="v-pills-tabContent">
+
                     <div class="tab-pane fade show active" id="v-pills-all" role="tabpanel"
                         aria-labelledby="v-pills-all-tab">
                         <div class="forum">
@@ -151,34 +174,43 @@
                                 <!-- Post 1 -->
                                 <div class="forum card"><a href="post.html">
 
-                                        <div class="space-div">
+                                    <div class="space-div">
 
-                                            <div class="row">
-                                                <div class="col-12">
-                                                    <h5 class="card-title">Post 1</h5>
-                                                </div>
-                                            </div>
-
-                                            <p class="card-text">Lorem Ipsum is simply dummy text of the printing and
-                                                typesetting industry. Lorem Ipsum has been the industry's standard dummy
-                                                text ever since the 1500s, when an unknown printer took a galley of type
-                                                and scrambled it to make a type specimen book ...</p>
-
-                                            <div class="like-div">
-                                                <span>100</span><img src="Assets/likes.png" alt="...">
-                                                <span>25</span><img src="Assets/comment.png" alt="...">
-                                                <span>Posted 5 hours ago</span>
-                                            </div>
-
+                                        <div class="d-flex profile-div align-items-center">
+                                            <img src="Assets/profile.png" alt="profile">
+                                            <span>Hamkee & Company</span>
                                         </div>
+
+                                        <div class="row">
+                                            <div class="col-12">
+                                                <h5 class="card-title">Post 1</h5>
+                                            </div>
+                                        </div>
+
+                                        <p class="card-text">Lorem Ipsum is simply dummy text of the printing and
+                                            typesetting industry. Lorem Ipsum has been the industry's standard dummy
+                                            text ever since the 1500s, when an unknown printer took a galley of type
+                                            and scrambled it to make a type specimen book ...</p>
+
+                                        <div class="like-div">
+                                            <span>100</span><img src="Assets/likes.png" alt="...">
+                                            <span>25</span><img src="Assets/comment.png" alt="...">
+                                            <span>Posted 5 hours ago</span>
+                                        </div>
+
+                                    </div>
                                     </a>
                                 </div>
 
                                 <!-- Post 2 -->
-                                <div class="forum card">
-
+                                <div class="forum card"><a href="post.html">
+                                                
                                     <div class="space-div">
-
+                                        <div class="d-flex profile-div align-items-center">
+                                            <img src="Assets/profile.png" alt="profile">
+                                            <span>Hamkee & Company</span>
+                                        </div>
+                                        
                                         <div class="row">
                                             <div class="col-12">
                                                 <h5 class="card-title">Post 2</h5>
@@ -196,13 +228,17 @@
                                             <span>Posted 5 hours ago</span>
                                         </div>
 
-                                    </div>
+                                    </div></a>
                                 </div>
 
                                 <!-- Post 3 -->
-                                <div class="forum card">
+                                <div class="forum card"><a href="post.html">
 
                                     <div class="space-div">
+                                        <div class="d-flex profile-div align-items-center">
+                                            <img src="Assets/profile.png" alt="profile">
+                                            <span>Hamkee & Company</span>
+                                        </div>
 
                                         <div class="row">
                                             <div class="col-12">
@@ -221,7 +257,7 @@
                                             <span>Posted 5 hours ago</span>
                                         </div>
 
-                                    </div>
+                                    </div></a>
                                 </div>
 
                             </div>
@@ -238,34 +274,43 @@
                                 <!-- Post 1 -->
                                 <div class="forum card"><a href="post.html">
 
-                                        <div class="space-div">
+                                    <div class="space-div">
 
-                                            <div class="row">
-                                                <div class="col-12">
-                                                    <h5 class="card-title">Post 1</h5>
-                                                </div>
-                                            </div>
-
-                                            <p class="card-text">Lorem Ipsum is simply dummy text of the printing and
-                                                typesetting industry. Lorem Ipsum has been the industry's standard dummy
-                                                text ever since the 1500s, when an unknown printer took a galley of type
-                                                and scrambled it to make a type specimen book ...</p>
-
-                                            <div class="like-div">
-                                                <span>100</span><img src="Assets/likes.png" alt="...">
-                                                <span>25</span><img src="Assets/comment.png" alt="...">
-                                                <span>Posted 5 hours ago</span>
-                                            </div>
-
+                                        <div class="d-flex profile-div align-items-center">
+                                            <img src="Assets/profile.png" alt="profile">
+                                            <span>Hamkee & Company</span>
                                         </div>
+
+                                        <div class="row">
+                                            <div class="col-12">
+                                                <h5 class="card-title">Post 1</h5>
+                                            </div>
+                                        </div>
+
+                                        <p class="card-text">Lorem Ipsum is simply dummy text of the printing and
+                                            typesetting industry. Lorem Ipsum has been the industry's standard dummy
+                                            text ever since the 1500s, when an unknown printer took a galley of type
+                                            and scrambled it to make a type specimen book ...</p>
+
+                                        <div class="like-div">
+                                            <span>100</span><img src="Assets/likes.png" alt="...">
+                                            <span>25</span><img src="Assets/comment.png" alt="...">
+                                            <span>Posted 5 hours ago</span>
+                                        </div>
+
+                                    </div>
                                     </a>
                                 </div>
 
                                 <!-- Post 2 -->
-                                <div class="forum card">
-
+                                <div class="forum card"><a href="post.html">
+                                                
                                     <div class="space-div">
-
+                                        <div class="d-flex profile-div align-items-center">
+                                            <img src="Assets/profile.png" alt="profile">
+                                            <span>Hamkee & Company</span>
+                                        </div>
+                                        
                                         <div class="row">
                                             <div class="col-12">
                                                 <h5 class="card-title">Post 2</h5>
@@ -283,13 +328,17 @@
                                             <span>Posted 5 hours ago</span>
                                         </div>
 
-                                    </div>
+                                    </div></a>
                                 </div>
 
                                 <!-- Post 3 -->
-                                <div class="forum card">
+                                <div class="forum card"><a href="post.html">
 
                                     <div class="space-div">
+                                        <div class="d-flex profile-div align-items-center">
+                                            <img src="Assets/profile.png" alt="profile">
+                                            <span>Hamkee & Company</span>
+                                        </div>
 
                                         <div class="row">
                                             <div class="col-12">
@@ -308,7 +357,7 @@
                                             <span>Posted 5 hours ago</span>
                                         </div>
 
-                                    </div>
+                                    </div></a>
                                 </div>
 
                             </div>
@@ -325,34 +374,43 @@
                                 <!-- Post 1 -->
                                 <div class="forum card"><a href="post.html">
 
-                                        <div class="space-div">
+                                    <div class="space-div">
 
-                                            <div class="row">
-                                                <div class="col-12">
-                                                    <h5 class="card-title">Post 1</h5>
-                                                </div>
-                                            </div>
-
-                                            <p class="card-text">Lorem Ipsum is simply dummy text of the printing and
-                                                typesetting industry. Lorem Ipsum has been the industry's standard dummy
-                                                text ever since the 1500s, when an unknown printer took a galley of type
-                                                and scrambled it to make a type specimen book ...</p>
-
-                                            <div class="like-div">
-                                                <span>100</span><img src="Assets/likes.png" alt="...">
-                                                <span>25</span><img src="Assets/comment.png" alt="...">
-                                                <span>Posted 5 hours ago</span>
-                                            </div>
-
+                                        <div class="d-flex profile-div align-items-center">
+                                            <img src="Assets/profile.png" alt="profile">
+                                            <span>Hamkee & Company</span>
                                         </div>
+
+                                        <div class="row">
+                                            <div class="col-12">
+                                                <h5 class="card-title">Post 1</h5>
+                                            </div>
+                                        </div>
+
+                                        <p class="card-text">Lorem Ipsum is simply dummy text of the printing and
+                                            typesetting industry. Lorem Ipsum has been the industry's standard dummy
+                                            text ever since the 1500s, when an unknown printer took a galley of type
+                                            and scrambled it to make a type specimen book ...</p>
+
+                                        <div class="like-div">
+                                            <span>100</span><img src="Assets/likes.png" alt="...">
+                                            <span>25</span><img src="Assets/comment.png" alt="...">
+                                            <span>Posted 5 hours ago</span>
+                                        </div>
+
+                                    </div>
                                     </a>
                                 </div>
 
                                 <!-- Post 2 -->
-                                <div class="forum card">
-
+                                <div class="forum card"><a href="post.html">
+                                                
                                     <div class="space-div">
-
+                                        <div class="d-flex profile-div align-items-center">
+                                            <img src="Assets/profile.png" alt="profile">
+                                            <span>Hamkee & Company</span>
+                                        </div>
+                                        
                                         <div class="row">
                                             <div class="col-12">
                                                 <h5 class="card-title">Post 2</h5>
@@ -370,13 +428,17 @@
                                             <span>Posted 5 hours ago</span>
                                         </div>
 
-                                    </div>
+                                    </div></a>
                                 </div>
 
                                 <!-- Post 3 -->
-                                <div class="forum card">
+                                <div class="forum card"><a href="post.html">
 
                                     <div class="space-div">
+                                        <div class="d-flex profile-div align-items-center">
+                                            <img src="Assets/profile.png" alt="profile">
+                                            <span>Hamkee & Company</span>
+                                        </div>
 
                                         <div class="row">
                                             <div class="col-12">
@@ -395,7 +457,7 @@
                                             <span>Posted 5 hours ago</span>
                                         </div>
 
-                                    </div>
+                                    </div></a>
                                 </div>
 
                             </div>
@@ -412,34 +474,43 @@
                                 <!-- Post 1 -->
                                 <div class="forum card"><a href="post.html">
 
-                                        <div class="space-div">
+                                    <div class="space-div">
 
-                                            <div class="row">
-                                                <div class="col-12">
-                                                    <h5 class="card-title">Post 1</h5>
-                                                </div>
-                                            </div>
-
-                                            <p class="card-text">Lorem Ipsum is simply dummy text of the printing and
-                                                typesetting industry. Lorem Ipsum has been the industry's standard dummy
-                                                text ever since the 1500s, when an unknown printer took a galley of type
-                                                and scrambled it to make a type specimen book ...</p>
-
-                                            <div class="like-div">
-                                                <span>100</span><img src="Assets/likes.png" alt="...">
-                                                <span>25</span><img src="Assets/comment.png" alt="...">
-                                                <span>Posted 5 hours ago</span>
-                                            </div>
-
+                                        <div class="d-flex profile-div align-items-center">
+                                            <img src="Assets/profile.png" alt="profile">
+                                            <span>Hamkee & Company</span>
                                         </div>
+
+                                        <div class="row">
+                                            <div class="col-12">
+                                                <h5 class="card-title">Post 1</h5>
+                                            </div>
+                                        </div>
+
+                                        <p class="card-text">Lorem Ipsum is simply dummy text of the printing and
+                                            typesetting industry. Lorem Ipsum has been the industry's standard dummy
+                                            text ever since the 1500s, when an unknown printer took a galley of type
+                                            and scrambled it to make a type specimen book ...</p>
+
+                                        <div class="like-div">
+                                            <span>100</span><img src="Assets/likes.png" alt="...">
+                                            <span>25</span><img src="Assets/comment.png" alt="...">
+                                            <span>Posted 5 hours ago</span>
+                                        </div>
+
+                                    </div>
                                     </a>
                                 </div>
 
                                 <!-- Post 2 -->
-                                <div class="forum card">
-
+                                <div class="forum card"><a href="post.html">
+                                                
                                     <div class="space-div">
-
+                                        <div class="d-flex profile-div align-items-center">
+                                            <img src="Assets/profile.png" alt="profile">
+                                            <span>Hamkee & Company</span>
+                                        </div>
+                                        
                                         <div class="row">
                                             <div class="col-12">
                                                 <h5 class="card-title">Post 2</h5>
@@ -457,13 +528,17 @@
                                             <span>Posted 5 hours ago</span>
                                         </div>
 
-                                    </div>
+                                    </div></a>
                                 </div>
 
                                 <!-- Post 3 -->
-                                <div class="forum card">
+                                <div class="forum card"><a href="post.html">
 
                                     <div class="space-div">
+                                        <div class="d-flex profile-div align-items-center">
+                                            <img src="Assets/profile.png" alt="profile">
+                                            <span>Hamkee & Company</span>
+                                        </div>
 
                                         <div class="row">
                                             <div class="col-12">
@@ -482,7 +557,7 @@
                                             <span>Posted 5 hours ago</span>
                                         </div>
 
-                                    </div>
+                                    </div></a>
                                 </div>
 
                             </div>
@@ -499,34 +574,43 @@
                                 <!-- Post 1 -->
                                 <div class="forum card"><a href="post.html">
 
-                                        <div class="space-div">
+                                    <div class="space-div">
 
-                                            <div class="row">
-                                                <div class="col-12">
-                                                    <h5 class="card-title">Post 1</h5>
-                                                </div>
-                                            </div>
-
-                                            <p class="card-text">Lorem Ipsum is simply dummy text of the printing and
-                                                typesetting industry. Lorem Ipsum has been the industry's standard dummy
-                                                text ever since the 1500s, when an unknown printer took a galley of type
-                                                and scrambled it to make a type specimen book ...</p>
-
-                                            <div class="like-div">
-                                                <span>100</span><img src="Assets/likes.png" alt="...">
-                                                <span>25</span><img src="Assets/comment.png" alt="...">
-                                                <span>Posted 5 hours ago</span>
-                                            </div>
-
+                                        <div class="d-flex profile-div align-items-center">
+                                            <img src="Assets/profile.png" alt="profile">
+                                            <span>Hamkee & Company</span>
                                         </div>
+
+                                        <div class="row">
+                                            <div class="col-12">
+                                                <h5 class="card-title">Post 1</h5>
+                                            </div>
+                                        </div>
+
+                                        <p class="card-text">Lorem Ipsum is simply dummy text of the printing and
+                                            typesetting industry. Lorem Ipsum has been the industry's standard dummy
+                                            text ever since the 1500s, when an unknown printer took a galley of type
+                                            and scrambled it to make a type specimen book ...</p>
+
+                                        <div class="like-div">
+                                            <span>100</span><img src="Assets/likes.png" alt="...">
+                                            <span>25</span><img src="Assets/comment.png" alt="...">
+                                            <span>Posted 5 hours ago</span>
+                                        </div>
+
+                                    </div>
                                     </a>
                                 </div>
 
                                 <!-- Post 2 -->
-                                <div class="forum card">
-
+                                <div class="forum card"><a href="post.html">
+                                                
                                     <div class="space-div">
-
+                                        <div class="d-flex profile-div align-items-center">
+                                            <img src="Assets/profile.png" alt="profile">
+                                            <span>Hamkee & Company</span>
+                                        </div>
+                                        
                                         <div class="row">
                                             <div class="col-12">
                                                 <h5 class="card-title">Post 2</h5>
@@ -544,13 +628,17 @@
                                             <span>Posted 5 hours ago</span>
                                         </div>
 
-                                    </div>
+                                    </div></a>
                                 </div>
 
                                 <!-- Post 3 -->
-                                <div class="forum card">
+                                <div class="forum card"><a href="post.html">
 
                                     <div class="space-div">
+                                        <div class="d-flex profile-div align-items-center">
+                                            <img src="Assets/profile.png" alt="profile">
+                                            <span>Hamkee & Company</span>
+                                        </div>
 
                                         <div class="row">
                                             <div class="col-12">
@@ -569,7 +657,7 @@
                                             <span>Posted 5 hours ago</span>
                                         </div>
 
-                                    </div>
+                                    </div></a>
                                 </div>
 
                             </div>
@@ -587,34 +675,43 @@
                                 <!-- Post 1 -->
                                 <div class="forum card"><a href="post.html">
 
-                                        <div class="space-div">
+                                    <div class="space-div">
 
-                                            <div class="row">
-                                                <div class="col-12">
-                                                    <h5 class="card-title">Post 1</h5>
-                                                </div>
-                                            </div>
-
-                                            <p class="card-text">Lorem Ipsum is simply dummy text of the printing and
-                                                typesetting industry. Lorem Ipsum has been the industry's standard dummy
-                                                text ever since the 1500s, when an unknown printer took a galley of type
-                                                and scrambled it to make a type specimen book ...</p>
-
-                                            <div class="like-div">
-                                                <span>100</span><img src="Assets/likes.png" alt="...">
-                                                <span>25</span><img src="Assets/comment.png" alt="...">
-                                                <span>Posted 5 hours ago</span>
-                                            </div>
-
+                                        <div class="d-flex profile-div align-items-center">
+                                            <img src="Assets/profile.png" alt="profile">
+                                            <span>Hamkee & Company</span>
                                         </div>
+
+                                        <div class="row">
+                                            <div class="col-12">
+                                                <h5 class="card-title">Post 1</h5>
+                                            </div>
+                                        </div>
+
+                                        <p class="card-text">Lorem Ipsum is simply dummy text of the printing and
+                                            typesetting industry. Lorem Ipsum has been the industry's standard dummy
+                                            text ever since the 1500s, when an unknown printer took a galley of type
+                                            and scrambled it to make a type specimen book ...</p>
+
+                                        <div class="like-div">
+                                            <span>100</span><img src="Assets/likes.png" alt="...">
+                                            <span>25</span><img src="Assets/comment.png" alt="...">
+                                            <span>Posted 5 hours ago</span>
+                                        </div>
+
+                                    </div>
                                     </a>
                                 </div>
 
                                 <!-- Post 2 -->
-                                <div class="forum card">
-
+                                <div class="forum card"><a href="post.html">
+                                                
                                     <div class="space-div">
-
+                                        <div class="d-flex profile-div align-items-center">
+                                            <img src="Assets/profile.png" alt="profile">
+                                            <span>Hamkee & Company</span>
+                                        </div>
+                                        
                                         <div class="row">
                                             <div class="col-12">
                                                 <h5 class="card-title">Post 2</h5>
@@ -632,13 +729,17 @@
                                             <span>Posted 5 hours ago</span>
                                         </div>
 
-                                    </div>
+                                    </div></a>
                                 </div>
 
                                 <!-- Post 3 -->
-                                <div class="forum card">
+                                <div class="forum card"><a href="post.html">
 
                                     <div class="space-div">
+                                        <div class="d-flex profile-div align-items-center">
+                                            <img src="Assets/profile.png" alt="profile">
+                                            <span>Hamkee & Company</span>
+                                        </div>
 
                                         <div class="row">
                                             <div class="col-12">
@@ -657,10 +758,11 @@
                                             <span>Posted 5 hours ago</span>
                                         </div>
 
-                                    </div>
+                                    </div></a>
                                 </div>
 
                             </div>
+
                         </div>
                     </div>
                 </div>

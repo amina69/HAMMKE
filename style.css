@@ -4,6 +4,139 @@ body{
     flex-direction: column;
 }
 
+/* LOGIN FORM */
+
+.login-body{
+    background-color: #F7F7F7;
+}
+
+.logo-div{
+    margin: 2% 0 25px 0
+}
+
+.logo-div img{
+    width: 70px;
+    margin-right: 10px;
+}
+
+.logo-div div{
+    font-size: 30px;
+    font-weight: 800;
+    color: #404040;
+}
+
+.login-div form{
+    width: 450px;
+    padding: 50px;
+    background-color: #ffffff;
+}
+
+.login-btn{
+    outline: none;
+    border: none;
+    height: 50px;
+    border-radius: 5px;
+    font-size: 18px;
+    font-weight: 500;
+    color: #ffffff;
+    background-color: #662687;
+    width: 100%;
+}
+
+.login-btn a{
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.login-div form .title{
+    font-size: 20px;
+    font-weight: 800;
+    color: #404040;
+    margin-bottom: 20px;
+}
+
+.login-div form p{
+    font-size: 16px;
+    font-weight: 300;
+    color: #707070;
+    margin-bottom: 20px;
+}
+
+.login input{
+    width: 100%;
+    border: 0.6px solid #a8a8a8;
+    padding: 14px 20px;
+    margin-bottom: 10px;
+    border-radius: 2px;
+    color: #404040;
+    font-size: 14px;
+    font-weight: 300;
+}
+
+.login input:focus{
+    outline: 1px solid #404040 !important; 
+}
+
+.check-div{
+    margin: 5px 0 30px;
+}
+
+.check-div input{
+    width: 35px;
+    margin-right: 5px;
+}
+
+.check-div span{
+    font-size: 14px;
+    color: #404040;
+    font-weight: 400;
+}
+
+.forget-link, .signup-link{
+    font-size: 16px;
+    color: #404040;
+    font-weight: 400;
+    margin-top: 25px;
+}
+
+.forget-link a, .signup-link a{
+    color: #404040;
+}
+
+.forget-link{
+    margin-top: 40px;
+}
+
+.or{
+    font-size: 12px;
+    color: #707070;
+    font-weight: 300;
+    margin: 20px 0;
+}
+
+.google-btn{
+    outline: none;
+    border: 1px solid #404040;
+    height: 50px;
+    border-radius: 5px;
+    font-size: 18px;
+    font-weight: 500;
+    background-color: #ffffff;
+    width: 100%;
+}
+
+.google-btn img{
+    width: 40px;
+    margin-right: 20px;
+}
+
+.google-btn a{
+    text-decoration: none;
+    color: #404040;
+    margin-right: 10px;
+}
+
+
 /* NAVBAR */
 
 .navbar .navbar-brand {
@@ -31,26 +164,29 @@ body{
 }
 
 .navbtn button{
-    outline: none;
+    background-color: transparent;
     border: 1px solid #662687;
+    margin-right: 10px;
+    border-radius: 100px;
+    font-size: 14px;
+    color: #662687;
+}
+
+.navbtn button:last-child{
+    outline: none;
     border-radius: 100px;
     background-color: #662687;
     font-size: 14px;
-}
-
-.navbtn button:nth-child(1){
-    background-color: transparent;
-    border: 1px solid #662687;
-    margin-right: 10px
+    width: 100px;
 }
 
 .navbtn button .nav-link{
     text-decoration: none;
-    color: #ffffff;
+    color: #662687;
 }
 
-.navbtn button:nth-child(1) .nav-link{
-    color: #662687;
+.navbtn button:last-child .nav-link{
+    color: #ffffff;
 }
 
 .navbtn button img{
@@ -134,6 +270,22 @@ section .navbar-toggler {
     padding: 10px;
 }
 
+.forum-div .nav-item:last-child, .post-div .nav-item:last-child{
+    border-top: 0.5px solid #404040;
+}
+
+.forum-div .nav-item:last-child, .post-div .nav-item:last-child{
+    border-top: 0.5px solid #404040;
+}
+
+.forum-div .nav-item:last-child button, .post-div .nav-item:last-child button{
+    font-weight: 600;
+    color: #404040;
+}
+
+.forum-div #navbarNav2 button {
+    padding-left: 20px;
+}
 
 /* HEADER */
 
@@ -720,8 +872,6 @@ section .navbar-toggler {
 }
 
 .post-box{
-    border-bottom: 0.5px solid #e9e9e9;
-    margin-bottom: 50px;
     background-color: #ffffff;
 }
 
@@ -751,17 +901,53 @@ section .navbar-toggler {
 }
 
 .post-box button{
-    margin-bottom: 50px;
     padding: 12px 30px;
     outline: none;
     border: 1px solid #662687;
     border-radius: 5px;
     font-size: 16px;
     font-weight: 500;
-    color: #662687;
-    background-color: #ffffff;
+    color: #ffffff;
+    background-color: #662687;
     width: 120px;
+    margin-top: 20px;
 }
+
+.post-box .form-select{
+    border-radius: 0;
+    margin-bottom: 10px;
+    border: 1px solid #a8a8a8;
+    font-size: 16px;
+    font-weight: 300;
+    color: #404040;
+    padding: 10px 20px;
+}
+
+.post-box textarea{
+    width: 100%;
+    height: 120px;
+    font-size: 16px;
+    font-weight: 300;
+    color: #404040;
+    padding: 10px 20px;
+}
+
+.forum-body .modal-header p, .post-div .modal-header p{
+    font-size: 18px;
+    font-weight: 600;
+    color: #404040;
+    margin-bottom: 20px;
+}
+
+.post-box textarea::placeholder, .post-div textarea::placeholder{
+    font-weight: 300;
+    color: #404040;
+}
+
+.forum-div .modal-content, .post-div .modal-content{
+    padding: 30px;
+}
+
 
 /* STUDY CARDS */
 
@@ -830,10 +1016,21 @@ section .navbar-toggler {
     margin-right: 10px;
 }
 
+.post-btn{
+    padding: 20px;
+    width: 100%;
+    border: none;
+    outline: none;
+    background-color: #404040;
+    color: #ffffff;
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
 /* MODAL */
 
 .modal.show .modal-dialog {
-    margin-top: 200px;
+    margin-top: 150px;
 }
 
 .modal-footer button{
@@ -1189,16 +1386,6 @@ section .navbar-toggler {
     font-weight: 400;
 }
 
-.form-select{
-    border-radius: 0;
-    margin-bottom: 10px;
-    border: 1px solid #a8a8a8;
-    font-size: 16px;
-    font-weight: 300;
-    color: #404040;
-    padding: 10px 20px;
-}
-
 .price-div div{
     font-size: 18px;
     font-weight: 400;
@@ -1270,32 +1457,32 @@ section .navbar-toggler {
     margin-bottom: 20px;
 }
 
-.form-check{
+.cart-div .form-check{
     margin: 20px 0 30px 0;
     padding-left: 1.5em;
     padding-right: 1.5em;
 }
 
-.form-check:last-child{
+.cart-div .form-check:last-child{
     margin-bottom: 0;
 }
 
-.form-check-input:checked {
+.cart-div .form-check-input:checked {
     background-color: #662687;
     border-color: #662687;
 }
 
-.form-check label{
+.cart-div .form-check label{
     color: #404040;
     font-size: 14px;
     font-weight: 400;
 }
 
-.form-check form, .info-form form{
+.cart-div .form-check form, .info-form form{
     margin-bottom: 20px;
 }
 
-.form-check p, .personal p{
+.cart-div .form-check p, .personal p{
     font-size: 12px;
     font-weight: 300;
     color: #707070;
@@ -1306,7 +1493,7 @@ section .navbar-toggler {
     padding-top: 0;
 }
 
-.form-check form input, .info-form form input{
+.cart-div .form-check form input, .info-form form input{
     margin: 5px 0;
     padding: 10px;
     outline: none;
@@ -1319,7 +1506,7 @@ section .navbar-toggler {
     color: #404040;
 }
 
-.form-check form input::placeholder, .info-form form input::placeholder{
+.cart-div .form-check form input::placeholder, .info-form form input::placeholder{
     font-size: 14px;
     font-weight: 300;
 }
@@ -1359,8 +1546,16 @@ footer{
     color: #ffffff;
 }
 
+@media (min-width: 1500px) {
+
+    .logo-div{
+        margin: 10% 0 40px 0
+    }
+
+}
 
 @media (min-width: 1200px) {
+
 
     /* FORUM NAVBAR */
 
@@ -1516,11 +1711,11 @@ footer{
 
     /* Checkout */
 
-    .info-form form .d-flex, .form-check form .d-flex{
+    .info-form form .d-flex, .cart-div .form-check form .d-flex{
         flex-wrap: wrap;
     }
 
-    .info-form form input, .form-check form input{
+    .info-form form input, .cart-div .form-check form input{
         width: 100%;
     }
 
@@ -1784,6 +1979,10 @@ footer{
 }
 
 @media (max-width: 767px) and (min-width: 575px) {
+
+    .logo-div{
+        margin: 5% 0 40px 0
+    }
 
     /* Homepage */
 
@@ -2389,6 +2588,30 @@ footer{
         display: none;
     }
 
+}
+
+/* LOGIN */
+
+@media (max-width: 767px) and (min-width: 500px) {
+
+    .logo-div{
+        margin: 15% 0 40px 0
+    }
+
+    .login-div form {
+        width: 600px;
+    }
+}
+
+@media (max-width: 501px) {
+
+    .logo-div{
+        margin: 10% 0 40px 0
+    }
+
+    .login-div form {
+        width: 100%;
+    }
 }
 
 
