@@ -1756,10 +1756,10 @@ footer{
         margin: auto 0;
     }
 
-    .paddingR{
+    /* .paddingR{
         padding-right: 0;
         padding-left: 0;
-    }
+    } */
 
     .navbar .navbar-brand {
         margin-right: 30px;
@@ -1866,6 +1866,7 @@ footer{
 
     .forum-div .col-md-3, .hallyu-div .col-md-3, .article-body .col-md-3, .learnkorean-div .col-md-3, .store-div .col-md-3, .forum-div .col-md-9, .learnkorean-div .col-md-9, .store-div .col-md-9, .hallyu-div .col-md-9, .article-body .col-md-9 {
         width: 100%;
+        background-color: #ffffff;
     }
 
     /* Forum */
@@ -2101,6 +2102,11 @@ footer{
         justify-content: center;
     }
 
+    .forum-div .col-md-3, .hallyu-div .col-md-3, .article-body .col-md-3, .learnkorean-div .col-md-3, .store-div .col-md-3, .forum-div .col-md-9, .learnkorean-div .col-md-9, .store-div .col-md-9, .hallyu-div .col-md-9, .article-body .col-md-9 {
+        width: 100%;
+        background-color: #ffffff;
+    }
+
     /* Forum */
 
     .forum {
@@ -2311,9 +2317,9 @@ footer{
         width: 100vw;
     }
 
-    .carousel-item{
+    /* .carousel-item{
         display: none !important;
-    }
+    } */
 
     .forum-div .nav, .learnkorean-div .nav, .store-div .nav, .hallyu-div .nav{
         box-shadow: rgba(33, 35, 38, 0.1) 0px 10px 10px -10px;
@@ -2347,6 +2353,11 @@ footer{
     .forum-div .col-md-9, .learnkorean-div .col-md-9, .store-div .col-md-9 {
         padding-left: 0;
         padding-right: 0;
+    }
+
+    .forum-div .col-md-3, .hallyu-div .col-md-3, .article-body .col-md-3, .learnkorean-div .col-md-3, .store-div .col-md-3, .forum-div .col-md-9, .learnkorean-div .col-md-9, .store-div .col-md-9, .hallyu-div .col-md-9, .article-body .col-md-9 {
+        width: 100%;
+        background-color: #ffffff;
     }
 
     .material-card {
@@ -2440,6 +2451,10 @@ footer{
     .modal.show .modal-dialog {
         margin-top: 150px;
     }
+
+    /* .modal:elem{
+        padding-right: 0;
+    } */
 
     /* Checkout */
 
@@ -2552,9 +2567,9 @@ footer{
 
     /* Learn Korean */
     
-    .forum-div .nav span, .learnkorean-div .nav span, .store-div .nav span{
+    /* .forum-div .nav span, .learnkorean-div .nav span, .store-div .nav span{
         display: block;
-    }
+    } */
 
     .material-card {
         width: 100%;
@@ -2586,6 +2601,10 @@ footer{
 
     .image-div img {
         display: none;
+    }
+
+    .carousel-overlay img{
+        width: 100%;
     }
 
 }
