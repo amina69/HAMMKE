@@ -1,9 +1,3 @@
-body{
-    min-width: 100vh;
-    display: flex;
-    flex-direction: column;
-}
-
 /* LOGIN FORM */
 
 .login-body{
@@ -464,8 +458,8 @@ section .navbar-toggler {
     margin-top: 10px;
 }
 
-.profile-div{
-    margin: 20px 0;
+.profile-div {
+    margin: 0 0 20px 0;
 }
 
 .profile-div img{
@@ -1119,7 +1113,7 @@ section .navbar-toggler {
 
 .podcast-row .card .quote-box{
     background-color: #ffffff;
-    padding: 30px 20px;
+    padding: 15px 20px;
     width: 100%;
     border-bottom-left-radius: 5px;
     border-bottom-right-radius: 5px;
@@ -1750,16 +1744,20 @@ footer{
         flex-direction: column;
     }
 
+    .section {
+        margin: 20px 0 0 0;
+    }
+
+    .paddingR {
+        padding-right: 0;
+        padding-left: 0;
+    }
+
     /* Homepage */
 
     .marginX{
         margin: auto 0;
     }
-
-    /* .paddingR{
-        padding-right: 0;
-        padding-left: 0;
-    } */
 
     .navbar .navbar-brand {
         margin-right: 30px;
@@ -1911,6 +1909,10 @@ footer{
         margin-top: 10px;
     }
 
+    .post-btn {
+        width: 50%;
+    }
+
 
     /* Podcast */
 
@@ -1930,6 +1932,10 @@ footer{
 
     .related-div .card:nth-child(3){
         display: none;
+    }
+
+    .podcast-row .card .quote-box .thumbnail {
+        font-size: 14px;
     }
 
     /* About Us */
@@ -1977,12 +1983,20 @@ footer{
         margin: 20px 0 0 0;
     }
 
+    footer {
+        margin-top: 50px;
+    }
+
 }
 
 @media (max-width: 767px) and (min-width: 575px) {
 
     .logo-div{
         margin: 5% 0 40px 0
+    }
+
+    .section {
+        margin: 20px 0 100px 0;
     }
 
     /* Homepage */
@@ -2155,6 +2169,10 @@ footer{
         width: 250px;
     }
 
+    .podcast-row .card .quote-box .thumbnail {
+        font-size: 14px;
+    }
+
 
     /* Article */
 
@@ -2220,11 +2238,19 @@ footer{
         margin: 20px 0 0 0;
     }
 
+    footer {
+        margin-top: 50px;
+    }
+
 }
 
 @media (max-width: 576px) {
 
     /* Homepage */
+
+    .section {
+        margin: 20px 0 0 0;
+    }
 
     .navbar .navbar-brand {
         margin-right: 30px;
@@ -2317,10 +2343,6 @@ footer{
         width: 100vw;
     }
 
-    /* .carousel-item{
-        display: none !important;
-    } */
-
     .forum-div .nav, .learnkorean-div .nav, .store-div .nav, .hallyu-div .nav{
         box-shadow: rgba(33, 35, 38, 0.1) 0px 10px 10px -10px;
     }
@@ -2407,12 +2429,17 @@ footer{
     }
 
     .forum-row .card {
+        padding: 0;
         width: 100%;
     }    
 
     .like-div span:nth-of-type(3) {
         display: block;
         margin-top: 10px;
+    }
+
+    .post-btn {
+        margin-bottom: 0;
     }
 
 
@@ -2422,7 +2449,9 @@ footer{
         width: 48%;
     }
 
-    /* Article */
+    .podcast-row .card .quote-box .thumbnail {
+        font-size: 14px;
+    }
 
      /* About Us */
 
@@ -2449,12 +2478,12 @@ footer{
     /* Modal */
 
     .modal.show .modal-dialog {
-        margin-top: 150px;
+        margin-top: 50px;
     }
 
-    /* .modal:elem{
-        padding-right: 0;
-    } */
+    .post-box button {
+        width: 100%;
+    }
 
     /* Checkout */
 
@@ -2493,6 +2522,30 @@ footer{
         width: 20px;
     }
 
+    .contact-form, .text-bg {
+        padding: 30px 15px;
+    }
+
+    .contact-div {
+        padding: 50px 0 0 0;
+    }
+
+    footer {
+        margin-top: 50px;
+    }
+
+    .group1, .group2, .group3, .group4 {
+        padding: 50px 0;
+    }
+
+    .group1 .row .col-md-2 {
+        padding: 0;
+    }
+
+    .group2 .card {
+        padding: 20px;
+    }
+
 }
 
 @media (max-width: 500px) {
@@ -2503,10 +2556,6 @@ footer{
 
     .carousel-overlay .title {
         left: 40px;
-    }
-
-    .group1 .row .col-md-2 {
-        padding: 0 80px;
     }
 
     .forum {
@@ -2520,10 +2569,6 @@ footer{
     }
 
     /* Contact Us */
-
-    .contact-form, .text-bg {
-        padding: 50px 30px;
-    }
 
     .forum .card .col-3{
         width: 18%;
@@ -2583,9 +2628,9 @@ footer{
 
 @media (max-width: 388px) {
 
-    .group1 .row .col-md-2 {
+    /* .group1 .row .col-md-2 {
         padding: 0 80px;
-    }
+    } */
 
     .forum {
         padding: 0;
