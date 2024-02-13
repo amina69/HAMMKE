@@ -1881,10 +1881,6 @@ footer{
         font-size: 20px;
     }
 
-    .profile-div{
-        display: block !important
-    }
-
     .forum .card-text {
         font-size: 14px;
         margin-top: 8px;
@@ -2131,10 +2127,6 @@ footer{
         padding: 20px;
     }
 
-    .profile-div{
-        display: block !important
-    }
-
     .profile-img {
         width: 30px;
         height: 30px;
@@ -2247,6 +2239,10 @@ footer{
 @media (max-width: 576px) {
 
     /* Homepage */
+
+    .carousel-item img{
+        height: 800px;
+    }
 
     .section {
         margin: 20px 0 0 0;
@@ -2400,10 +2396,6 @@ footer{
 
     .comment {
         padding: 20px;
-    }
-
-    .profile-div{
-        display: block !important
     }
 
     .profile-img {
@@ -2572,6 +2564,14 @@ footer{
 
     .forum .card .col-3{
         width: 18%;
+    }
+
+    .info-form .d-flex, .collect-form .d-flex{
+        flex-direction: column;
+    }
+
+    .cart-div .form-check form input, .info-form form input{
+        width: 100%;
     }
 
 }
